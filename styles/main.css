@@ -582,6 +582,7 @@ body {
 .pricing {
     background: #171836;
     padding-top: 69px;
+    padding-bottom: 115px;
 }
 
 .pricing-tittle {
@@ -595,17 +596,13 @@ body {
     box-sizing: border-box;
     background: linear-gradient(180deg, #202246 -53.38%, rgba(40, 43, 87, 0.31) 100%);
     border-radius: 20px;
-    padding: 33px 36px 34px 36px;
+    padding: 33px 36px 50px 36px;
     text-align: center;
     position: relative;
     overflow: hidden;
     z-index: 1;
     border: 3px solid #2e3064;
-    -webkit-transition:all 1s ease;
-    -moz-transition:all 1s ease;
-     -ms-transition:all 1s ease;
-      -o-transition:all 1s ease;
-         transition:all 1s ease;
+    height: 545px;
 
 
 }
@@ -636,7 +633,7 @@ body {
     color: #FFFFFF;
 }
 
-.card-like-count {
+.card-like-count, .card-like-count span.over {
     font-size: 18px;
     line-height: 150%;
     letter-spacing: 0.03em;
@@ -663,10 +660,31 @@ body {
     list-style-type: none;
     text-align: start;
     margin-bottom: 7px;
+    max-width: 271px;
 }
 
 
 .pricing-card ul.first li:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: #3BF5BD;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-flex;
+}
+
+.pricing-card ul.second li:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: #3BF5BD;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-flex;
+}
+
+.pricing-card ul.third li:before {
     content: " ";
     width: 10px;
     height: 10px;
@@ -686,6 +704,7 @@ body {
     margin-top: 94px;
     cursor: pointer;
     font-family: 'InterBold', sans-serif;
+    transition: .5s;
 }
 
 
@@ -698,11 +717,19 @@ body {
 .card-button.second {
     border: 1px solid #FF832A;
     color: #FF832A;
+    margin-top: 60px;
 }
 
 .card-button.third {
     border: 1px solid #F6C64B;;
     color: #F6C64B;
+    margin-top: 5px;
+}
+
+.card-button:hover {
+    background-color: #BB17F4;
+    color: #fff;
+    border: 0;
 }
 
 .pricing-card::after {
