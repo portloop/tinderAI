@@ -601,6 +601,13 @@ body {
     overflow: hidden;
     z-index: 1;
     border: 3px solid #2e3064;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+     -ms-transition:all 1s ease;
+      -o-transition:all 1s ease;
+         transition:all 1s ease;
+
+
 }
 
 .card-name {
@@ -698,7 +705,41 @@ body {
     color: #F6C64B;
 }
 
-.pricing-card.first::after {
+.pricing-card::after {
+    content: ' ';
+    background: rgba(166, 6, 222, 0.89);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    filter: blur(150px);
+    position: absolute;
+    width: 597px;
+    height: 597px;
+    z-index: -1;
+    bottom: -500px;
+    left: calc(50% - 298.5px);
+    transition: .5s;
+    
+}
+
+.pricing-card:hover::after{
+    transform: translateY(-800px);
+
+}
+
+
+.pricing-card.second::after {
+    content: ' ';
+    background: rgba(166, 6, 222, 0.89);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    filter: blur(150px);
+    position: absolute;
+    width: 597px;
+    height: 597px;
+    z-index: -1;
+    bottom: -500px;
+    left: calc(50% - 298.5px);
+}
+
+.pricing-card.third::after {
     content: ' ';
     background: rgba(166, 6, 222, 0.89);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -724,3 +765,4 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
