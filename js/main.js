@@ -10,3 +10,5 @@ for (let anchor of anchors) {
         })
     })
 }
+
+document.getElementById('video').play();

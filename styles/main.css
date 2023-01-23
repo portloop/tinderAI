@@ -960,3 +960,14 @@ body {
 .change-option:hover{
     opacity: 0.6;
 }
+
+.header-phone-img{
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+#video{
+    border-radius: 6px !important;
+    max-width: 277px;
+    max-height: 577px;
+}
