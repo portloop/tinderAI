@@ -624,6 +624,10 @@ body {
     margin-bottom: 117px;
 }
 
+.solution-blur{
+    display: none;
+}
+
 .pricing-card {
     width: 372px;
     height: 515px;
@@ -1510,20 +1514,20 @@ body {
         width: 300px;
         z-index: -1;
         top: -35px;
-        left: -180px;
+        left: -55px;
     }
 
-    .problem-section .header-blur::after {
-        content: ' ';
-        background: rgba(166, 6, 222, 0.89);
+    .problem-section .solution-blur {
+        width: 200px;
+        height: 200px !important;
+        background: rgba(166, 6, 222, 0.58);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        filter: blur(150px);
+        filter: blur(80px);
+        display: block;
+        z-index: -1;
         position: absolute;
-        width: 737px;
-        height: 545px;
-        z-index: 0;
-        bottom: -1200px;
-        right: -932px;
+        bottom: 0;
+        right: 0;
     }
 
     .solution-section .header-blur {
