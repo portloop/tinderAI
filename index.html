@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easymatch</title>
-    <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -23,6 +22,8 @@
                 </a>
             </div>
             <div class="header-menu">
+                <svg id="close" width="20px" height="20px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+
                 <a href="#" class="logo">
                     easymatch.ai
                 </a>
@@ -30,7 +31,7 @@
                     <a href="#" class="header-item-active">Home</a>
                     <a href="#problem" >Problem</a>
                     <a href="#solution">Solution</a>
-                    <a href="#contacts" >Contacts</a>
+                    <a href="#email-input" >Contacts</a>
                 </div>
                 <div class="change-language">
                     <div class="change-option">
@@ -49,13 +50,13 @@
                             </svg>
                         </div>
                     </div>
-                    <button class="login-button">Login</button>
+                    <a href="#email-input" class="login-button">Login</a>
                 </div>
             </div>
             <div class="header-content">
                 <div class="header-phone-video">
                     <div class="header-phone-img">
-                        <video id="video"   src="styles/WORK_main_5.mp4" autoplay muted playsinline></video>
+                        <video id="video"   src="styles/WORK_main_5.mp4" autoplay muted loop playsinline></video>
                     </div>
                 </div>
                 <div class="header-phone-cta">
@@ -67,7 +68,7 @@
                         best-suited-for-you profiles all-day and sends personalised ice-breakers based on photos, tags,
                         and descriptions.
                     </div>
-                    <button class="cta-button">Start swiping</button>
+                    <button class="cta-button actionScroll">Start swiping</button>
                 </div>
             </div>
         </div>
@@ -156,7 +157,7 @@
     <div class="enjoy-section">
         <div class="enjoy-section-container">
             <div class="enjoy-section-img">
-                <img src="img/img-2.jpg" alt="">
+                <img src="img/img-2.webp" alt="">
             </div>
             <div class="enjoy-section-offer">
                 <div class="enjoy-section-offer-tittle">
@@ -171,7 +172,7 @@
                     <li>Don’t waste your time on swipes</li>
                     
                 </ul>
-                <button class="cta-button">Enjoy now</button>
+                <button class="cta-button actionScroll">Enjoy now</button>
             </div>
         </div>
     </div>
@@ -218,7 +219,7 @@
                             <li>best-suited profile for you</li>
                         </ul>
                     </div>
-                    <button class="card-button first">Buy AI swipes</button>
+                    <button class="card-button actionScroll first">Buy AI swipes</button>
                 </div>
                 <div class="pricing-card second">
                     <div class="card-name">
@@ -237,7 +238,7 @@
                             <li>you can add photo & bio filter</li>
                         </ul>
                     </div>
-                    <button class="card-button second">Buy Fast date</button>
+                    <button class="card-button actionScroll second">Buy Fast date</button>
                 </div>
                 <div class="pricing-card third">
                     <div class="card-name">
@@ -258,7 +259,7 @@
                                 </li>
                         </ul>
                     </div>
-                    <button class="card-button third">Buy YOLO</button>
+                    <button class="card-button actionScroll third">Buy YOLO</button>
                 </div>
             </div>
         </div>
@@ -266,17 +267,17 @@
     <div class="contact-section">
         <div class="contact-section-container">
             <div class="contact-tittle solution-tittle">
-                Need any assistance?
+                Leave your email and we will contact you shortly
             </div>
             <form action="#">
-                <input type="text" placeholder="Don't hesitate to ask any question">
+                <input type="email"  placeholder="Don't hesitate to ask any question">
                 <button type="button">
                     Send
                 </button>
             </form>
         </div>
     </div>
-    <div class="contacts-list" id="contacts">
+    <div class="contacts-list" id="email-input" id="contacts">
         <div class="contacts-list-container">
             <div class="contacts">
                 Contacts

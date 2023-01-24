@@ -327,7 +327,7 @@ body {
     margin-right: 31px;
 }
 
-.change-language button {
+.change-language a {
     width: 102px;
     height: 41px;
     left: 1218px;
@@ -342,6 +342,14 @@ body {
     transition: .5s;
     border: 0;
     outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-menu #close{
+    display: none;
 }
 
 .header-content {
@@ -503,7 +511,7 @@ body {
     margin-bottom: 30px;
 }
 
-.solution-section{
+.solution-section {
     overflow: hidden;
 }
 
@@ -548,7 +556,7 @@ body {
 
 }
 
-.solution-repeat{
+.solution-repeat {
     display: none;
 }
 
@@ -582,7 +590,7 @@ body {
 }
 
 .solution-tittle {
-    font-size: 56px;
+    font-size: 49px;
     line-height: 150%;
     color: rgba(23, 24, 54, 0.7);
     font-family: 'InterMedium', sans-serif;
@@ -659,8 +667,12 @@ body {
     color: #FFFFFF;
 }
 
-.header-mobile-menu{
+.header-mobile-menu {
     display: none;
+}
+
+.header-menu.active{
+    display: flex;
 }
 
 .header-mobile-menu svg {
@@ -968,7 +980,9 @@ body {
     bottom: -600px;
 }
 
-.change-language button:hover {
+
+
+.change-language a:hover {
     background-color: #874618;
 }
 
@@ -1038,179 +1052,223 @@ body {
     .problem-section-container,
     .enjoy-section-container,
     .solution-container,
-    .pricing-container{
+    .pricing-container {
         padding: 0 20px;
     }
 
     .solution-text::after {
         height: 645px;
     }
-    .solution-tittle{
+
+    .solution-tittle {
         font-size: 44px;
     }
-    .soution-subtittle{
+
+    .soution-subtittle {
         font-size: 26px;
     }
-    .sol-description{
+
+    .sol-description {
         font-size: 19px;
     }
-    .solution-text{
+
+    .solution-text {
         margin-right: 10px;
     }
-    .solution-img{
+
+    .solution-img {
         width: 472px;
-    height: 513px;
+        height: 513px;
         position: absolute;
         right: 0;
         margin: 0;
     }
-    .solution-text::after{
+
+    .solution-text::after {
         height: 499px;
     }
-    .solution-section{
+
+    .solution-section {
         position: relative;
         padding-top: 54px;
         overflow: hidden;
     }
-    .solution-container{
+
+    .solution-container {
         justify-content: flex-start;
         margin-left: 20px;
     }
-    .solution-text::after{
+
+    .solution-text::after {
         height: 444px;
         left: calc(49%);
         top: -54px;
     }
-    .solution-section{
+
+    .solution-section {
         padding-top: 28px;
         padding-bottom: 20px;
     }
-    .solution-text::after{
+
+    .solution-text::after {
         height: 465px;
         left: calc(51%);
     }
-    .problem-list{
+
+    .problem-list {
         flex-direction: column;
         max-width: 400px;
         margin: 0 auto;
     }
-    
+
 }
 
 @media screen and (max-width: 1180px) {
-    .enjoy-section-offer-tittle{
+    .enjoy-section-offer-tittle {
         font-size: 44px;
     }
-    .enjoy-description{
+
+    .enjoy-description {
         font-size: 24px;
     }
-    .enjoy-section ul{
+
+    .enjoy-section ul {
         font-size: 19px;
         padding-left: 0;
     }
-    .pricing-card-list{
+
+    .pricing-card-list {
         flex-direction: column;
         align-items: center;
     }
-    .pricing-card{
+
+    .pricing-card {
         margin-bottom: 25px;
     }
-    .contacts-list-container{
+
+    .contacts-list-container {
         padding: 0 30px;
     }
-    .header-menu--items{
+
+    .header-menu--items {
         margin-left: 0;
     }
 }
 
 @media screen and (max-width: 975px) {
-    .solution-img{
+    .solution-img {
         position: none;
     }
-    .solution-container{
+
+    .solution-container {
         flex-direction: column;
         align-items: center;
         padding-bottom: 20px;
         text-align: center;
     }
-    .solution-text::after{
+
+    .solution-text::after {
         display: none;
     }
-    .solution-img img{
+
+    .solution-img img {
         display: none;
     }
 }
 
 @media screen and (max-width: 975px) {
-    .header-phone-cta .cta-tittle{
+    .header-phone-cta .cta-tittle {
         font-size: 44px;
     }
-    .header-phone-cta .cta-desription{
+
+    .header-phone-cta .cta-desription {
         font-size: 19px;
     }
-    .cta-button{
+
+    .cta-button {
         font-size: 15px;
         height: 57px;
-    width: 315px;
+        width: 315px;
     }
 }
 
 @media screen and (max-width: 815px) {
-    .solution-repeat{
+    .solution-repeat {
         display: block;
         width: 100%;
         height: 100%;
     }
-    .solution-section{
+
+    .solution-section {
         padding-top: 0;
     }
-    .solution-repeat{
+
+    .solution-repeat {
         width: 112%;
         margin-left: -20px;
     }
-    .solution-tittle{
+
+    .solution-tittle {
         margin-top: 30px;
     }
-    .enjoy-section-img img{
+
+    .enjoy-section-img img {
         display: none;
     }
-    .enjoy-section-container{
+
+    .enjoy-section-container {
         justify-content: center;
         align-items: center;
         text-align: center;
         padding-top: 50px;
     }
-    .enjoy-description{
+
+    .enjoy-description {
         max-width: none;
     }
-    .enjoy-section-offer{
+
+    .enjoy-section-offer {
         margin-right: -70px;
     }
-    .problem-list{
+
+    .problem-list {
         margin-right: 135px;
     }
-    .header-content{
-        flex-direction:column-reverse;
+
+    .header-content {
+        flex-direction: column-reverse;
     }
-   
-    .header-phone-cta{
+
+    .header-phone-cta {
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
         text-align: center;
         align-items: center;
     }
-    .solution-tittle{
+
+    .solution-tittle {
         font-size: 38px;
     }
 }
 
 @media screen and (max-width: 815px) {
-    .header-mobile-menu{
+    .header-mobile-menu {
         display: flex;
         justify-content: space-between;
     }
-    .header-menu{
+
+    .header-menu #close{
+        display: block;
+        height: 30px;
+        width: 30px;
+        fill: coral;
+        position: absolute;
+        right: 30px;
+        top: 30px
+    }
+
+    .header-menu {
         position: fixed;
         top: 0;
         left: 0;
@@ -1220,176 +1278,218 @@ body {
         z-index: 999;
         justify-content: center;
         align-items: center;
-        background: rgba(3, 16, 26, 0.8);
+        background: rgba(3, 16, 26, 1);
         display: none;
     }
-    .header-menu .logo{
+
+    .header-menu .logo {
         display: none;
     }
-    .header-menu--items{
+
+    .header-menu--items {
         display: flex;
         flex-direction: column;
         font-size: 22px;
     }
-    .header-menu--items a{
+
+    .header-menu--items a {
         margin: 15px 0;
     }
-    .change-language{
+
+    .change-language {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .change-option{
+
+    .change-option {
         order: 2;
         max-width: 50px;
         margin-top: 10px;
     }
-    .change-language button{
+
+    .change-language a {
         margin-top: 10px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .problem-list-item{
+    .problem-list-item {
         margin-right: 0;
     }
-    .problem-list{
+
+    .problem-list {
         margin-right: 100px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .problem-list{
+    .problem-list {
         margin-right: 70px;
     }
 }
 
 @media screen and (max-width: 590px) {
-    .solution-tittle{
+    .solution-tittle {
         font-size: 32px;
     }
-    .contact-section-container form input{
+
+    .contact-section-container form input {
         width: 297px;
     }
-    .contact-section-container form input::placeholder{
+
+    .contact-section-container form input::placeholder {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .enjoy-section-offer-tittle{
+    .enjoy-section-offer-tittle {
         font-size: 34px;
     }
-    .enjoy-description{
+
+    .enjoy-description {
         font-size: 21px;
     }
-    .enjoy-section-offer{
+
+    .enjoy-section-offer {
         margin-right: -110px;
     }
-    .solution-repeat{
+
+    .solution-repeat {
         width: 116%;
     }
-    .contact-section-container form button{
+
+    .contact-section-container form button {
         width: 132px;
     }
-    .problem-list{
+
+    .problem-list {
         margin-right: 40px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .problem-list{
+    .problem-list {
         margin-right: 0;
     }
-    .problem-section::after{
+
+    .problem-section::after {
         right: -690px;
     }
-    .problem-tittle{
+
+    .problem-tittle {
         font-size: 44px;
     }
-    .problem-list{
+
+    .problem-list {
         font-size: 19px;
     }
-    .problem-list{
+
+    .problem-list {
         margin-right: -30px;
     }
-    .problem-section, .enjoy-section, .pricing, .contact-section{
+
+    .problem-section,
+    .enjoy-section,
+    .pricing,
+    .contact-section {
         padding-bottom: 70px;
     }
-    .enjoy-section-offer-tittle{
+
+    .enjoy-section-offer-tittle {
         font-size: 28px;
     }
-    .enjoy-description{
+
+    .enjoy-description {
         font-size: 18px;
     }
+
     .enjoy-section ul {
         font-size: 17px;
     }
-    .enjoy-section-container{
+
+    .enjoy-section-container {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
 
 @media screen and (max-width: 470px) {
-    .enjoy-section-offer{
+    .enjoy-section-offer {
         max-width: 375px;
     }
-    .contact-section-container form input{
+    .solution-tittle{
+        font-size: 26px;
+    }
+
+    .contact-section-container form input {
         padding: 0 5px;
     }
-    .contact-section-container form input{
+
+    .contact-section-container form input {
         width: 246px;
     }
-    .contact-section-container form button{
+
+    .contact-section-container form button {
         width: 99px;
     }
-    .contact-section-container{
+
+    .contact-section-container {
         padding-bottom: 40px;
         padding-top: 50px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .enjoy-section{
+    .enjoy-section {
         padding-bottom: 30px;
     }
-    .enjoy-section{
+
+    .enjoy-section {
         max-height: 550px;
     }
-    .solution-repeat{
+
+    .solution-repeat {
         width: 120%;
     }
-    .solution-text{
+
+    .solution-text {
         margin-right: 10px;
     }
-    .pricing-card{
+
+    .pricing-card {
         max-width: 350px;
     }
-    .problem-list{
+
+    .problem-list {
         padding-right: 10px;
         font-size: 16px;
     }
-    .problem-list-item{
+
+    .problem-list-item {
         max-width: 320px;
     }
-    .problem-list{
+
+    .problem-list {
         align-items: flex-start;
-    margin-left: 20px;
+        margin-left: 20px;
     }
-    .problem-list-item{
+
+    .problem-list-item {
         margin-top: 30px;
     }
-    .problem-section{
+
+    .problem-section {
         padding-top: 40px;
     }
 
-    .enjoy-section-offer-tittle{
+    .enjoy-section-offer-tittle {
         margin-bottom: 30px;
     }
-    .card-button{
+
+    .card-button {
         margin-left: -10px;
     }
 
 }
-
