@@ -1173,7 +1173,7 @@ body {
         position: none;
     }
 
-    .solution-section::before{
+    .solution-section::before {
         display: block;
     }
 
@@ -1216,10 +1216,10 @@ body {
         height: 100%;
     }
 
-    .solution-section::before{
+    .solution-section::before {
         display: block;
         left: 308px;
-    top: 640px;
+        top: 640px;
     }
 
     .solution-section {
@@ -1400,7 +1400,8 @@ body {
         top: -433px;
         left: -350px;
     }
-    .problem-section::after{
+
+    .problem-section::after {
         right: -575px;
     }
 }
@@ -1451,6 +1452,15 @@ body {
     }
 }
 
+.header-blur {
+    width: 200px;
+    height: 200px !important;
+    background: rgba(166, 6, 222, 0.58);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    filter: blur(80px);
+    display: none;
+}
+
 @media screen and (max-width: 470px) {
     .enjoy-section-offer {
         max-width: 375px;
@@ -1475,6 +1485,16 @@ body {
     .contact-section-container {
         padding-bottom: 40px;
         padding-top: 50px;
+    }
+
+    .header{
+        position: relative;
+    }
+    .header-blur {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
 
