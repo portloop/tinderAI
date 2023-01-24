@@ -1530,6 +1530,8 @@ body {
         right: 0;
     }
 
+    /* Comment */
+
     .solution-section .header-blur {
         display: block;
         position: absolute;
