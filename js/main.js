@@ -33,15 +33,21 @@ function isEmailValid(value) {
  	return EMAIL_REGEXP.test(value);
 }
 
+let emailNotification = document.querySelector('.success-send');
+
 sumbitButton.addEventListener('click', function(e) {
     if(isEmailValid(inputEmail.value)) {
         inputEmail.style = 'border: 2px solid green'
+        emailNotification.classList.add('active');
     } else {
         inputEmail.style = 'border: 2px solid red'
     }
     setTimeout(() => {
         inputEmail.style = 'border: 0'
       }, "2000")
+    setTimeout(() => {
+        emailNotification.classList.remove('active')
+    }, '5000');
 })
 
 let burgerMenu = document.querySelector('.mobile-burger'),
