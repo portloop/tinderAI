@@ -503,6 +503,10 @@ body {
     margin-bottom: 30px;
 }
 
+.solution-section{
+    overflow: hidden;
+}
+
 .enjoy-description {
     font-size: 30px;
     line-height: 150%;
@@ -542,6 +546,10 @@ body {
     margin-right: -159px;
     width: 761px;
 
+}
+
+.solution-repeat{
+    display: none;
 }
 
 .solution-img img {
@@ -650,6 +658,17 @@ body {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
+
+.header-mobile-menu{
+    display: none;
+}
+
+.header-mobile-menu svg {
+    width: 40px;
+    height: 40px;
+    fill: #FF832A;
+}
+
 
 .card-like-count,
 .card-like-count span.over {
@@ -949,25 +968,428 @@ body {
     bottom: -600px;
 }
 
-.change-language button:hover{
+.change-language button:hover {
     background-color: #874618;
 }
 
-.change-option{
+.change-option {
     transition: .5s;
 }
 
-.change-option:hover{
+.change-option:hover {
     opacity: 0.6;
 }
 
-.header-phone-img{
+.header-phone-img {
     overflow: hidden;
     border-radius: 6px;
 }
 
-#video{
+#video {
     border-radius: 6px !important;
     max-width: 277px;
     max-height: 577px;
 }
+
+@media screen and (max-width: 1519px) {
+    .solution-img {
+        margin-right: -130px;
+    }
+}
+
+@media screen and (max-width: 1458px) {
+    .solution-img {
+        margin-right: -100px;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .solution-img {
+        margin-right: -20px;
+        height: 83%;
+        width: 84%;
+        margin-bottom: -1px;
+    }
+
+    .solution-text::after {
+        height: 655px;
+    }
+
+}
+
+@media screen and (max-width: 1240px) {
+    .solution-img {
+        margin-right: -20px;
+        height: 63%;
+        width: 64%;
+        margin-bottom: -1px;
+    }
+
+    .solution-text::after {
+        height: 657px;
+    }
+
+}
+
+@media screen and (max-width: 1230px) {
+
+    .header-container,
+    .problem-section-container,
+    .enjoy-section-container,
+    .solution-container,
+    .pricing-container{
+        padding: 0 20px;
+    }
+
+    .solution-text::after {
+        height: 645px;
+    }
+    .solution-tittle{
+        font-size: 44px;
+    }
+    .soution-subtittle{
+        font-size: 26px;
+    }
+    .sol-description{
+        font-size: 19px;
+    }
+    .solution-text{
+        margin-right: 10px;
+    }
+    .solution-img{
+        width: 472px;
+    height: 513px;
+        position: absolute;
+        right: 0;
+        margin: 0;
+    }
+    .solution-text::after{
+        height: 499px;
+    }
+    .solution-section{
+        position: relative;
+        padding-top: 54px;
+        overflow: hidden;
+    }
+    .solution-container{
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+    .solution-text::after{
+        height: 444px;
+        left: calc(49%);
+        top: -54px;
+    }
+    .solution-section{
+        padding-top: 28px;
+        padding-bottom: 20px;
+    }
+    .solution-text::after{
+        height: 465px;
+        left: calc(51%);
+    }
+    .problem-list{
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (max-width: 1180px) {
+    .enjoy-section-offer-tittle{
+        font-size: 44px;
+    }
+    .enjoy-description{
+        font-size: 24px;
+    }
+    .enjoy-section ul{
+        font-size: 19px;
+        padding-left: 0;
+    }
+    .pricing-card-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-card{
+        margin-bottom: 25px;
+    }
+    .contacts-list-container{
+        padding: 0 30px;
+    }
+    .header-menu--items{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .solution-img{
+        position: none;
+    }
+    .solution-container{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .solution-text::after{
+        display: none;
+    }
+    .solution-img img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .header-phone-cta .cta-tittle{
+        font-size: 44px;
+    }
+    .header-phone-cta .cta-desription{
+        font-size: 19px;
+    }
+    .cta-button{
+        font-size: 15px;
+        height: 57px;
+    width: 315px;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .solution-repeat{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .solution-section{
+        padding-top: 0;
+    }
+    .solution-repeat{
+        width: 112%;
+        margin-left: -20px;
+    }
+    .solution-tittle{
+        margin-top: 30px;
+    }
+    .enjoy-section-img img{
+        display: none;
+    }
+    .enjoy-section-container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .enjoy-description{
+        max-width: none;
+    }
+    .enjoy-section-offer{
+        margin-right: -70px;
+    }
+    .problem-list{
+        margin-right: 135px;
+    }
+    .header-content{
+        flex-direction:column-reverse;
+    }
+   
+    .header-phone-cta{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        text-align: center;
+        align-items: center;
+    }
+    .solution-tittle{
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .header-mobile-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+        background: rgba(3, 16, 26, 0.8);
+        display: none;
+    }
+    .header-menu .logo{
+        display: none;
+    }
+    .header-menu--items{
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+    }
+    .header-menu--items a{
+        margin: 15px 0;
+    }
+    .change-language{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .change-option{
+        order: 2;
+        max-width: 50px;
+        margin-top: 10px;
+    }
+    .change-language button{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .problem-list-item{
+        margin-right: 0;
+    }
+    .problem-list{
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .problem-list{
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .solution-tittle{
+        font-size: 32px;
+    }
+    .contact-section-container form input{
+        width: 297px;
+    }
+    .contact-section-container form input::placeholder{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .enjoy-section-offer-tittle{
+        font-size: 34px;
+    }
+    .enjoy-description{
+        font-size: 21px;
+    }
+    .enjoy-section-offer{
+        margin-right: -110px;
+    }
+    .solution-repeat{
+        width: 116%;
+    }
+    .contact-section-container form button{
+        width: 132px;
+    }
+    .problem-list{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .problem-list{
+        margin-right: 0;
+    }
+    .problem-section::after{
+        right: -690px;
+    }
+    .problem-tittle{
+        font-size: 44px;
+    }
+    .problem-list{
+        font-size: 19px;
+    }
+    .problem-list{
+        margin-right: -30px;
+    }
+    .problem-section, .enjoy-section, .pricing, .contact-section{
+        padding-bottom: 70px;
+    }
+    .enjoy-section-offer-tittle{
+        font-size: 28px;
+    }
+    .enjoy-description{
+        font-size: 18px;
+    }
+    .enjoy-section ul {
+        font-size: 17px;
+    }
+    .enjoy-section-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .enjoy-section-offer{
+        max-width: 375px;
+    }
+    .contact-section-container form input{
+        padding: 0 5px;
+    }
+    .contact-section-container form input{
+        width: 246px;
+    }
+    .contact-section-container form button{
+        width: 99px;
+    }
+    .contact-section-container{
+        padding-bottom: 40px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .enjoy-section{
+        padding-bottom: 30px;
+    }
+    .enjoy-section{
+        max-height: 550px;
+    }
+    .solution-repeat{
+        width: 120%;
+    }
+    .solution-text{
+        margin-right: 10px;
+    }
+    .pricing-card{
+        max-width: 350px;
+    }
+    .problem-list{
+        padding-right: 10px;
+        font-size: 16px;
+    }
+    .problem-list-item{
+        max-width: 320px;
+    }
+    .problem-list{
+        align-items: flex-start;
+    margin-left: 20px;
+    }
+    .problem-list-item{
+        margin-top: 30px;
+    }
+    .problem-section{
+        padding-top: 40px;
+    }
+
+    .enjoy-section-offer-tittle{
+        margin-bottom: 30px;
+    }
+    .card-button{
+        margin-left: -10px;
+    }
+
+}
+
