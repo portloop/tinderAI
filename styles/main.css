@@ -1487,14 +1487,26 @@ body {
         padding-top: 50px;
     }
 
-    .header{
+    .header {
         position: relative;
     }
+
     .header-blur {
         display: block;
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    .header-phone-video::before,
+    .header-phone-video::after,
+    .header-phone-video::before,
+    .problem-section::before,
+    .problem-section::after,
+    .enjoy-section::before,
+    .pricing::before,
+    .contact-section::before {
+        display: none;
     }
 }
 
